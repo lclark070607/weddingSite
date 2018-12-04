@@ -1,0 +1,72 @@
+/* This is just a less file for including the same-height-columns behaviour to your bootstrap-based css stylesheet using LESS. For the original post, have a look at http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-columns-of-same-height */
+
+/* @screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px; */
+
+
+/* columns of same height styles */
+
+.row-full-height {
+    height: 100%;
+  }
+  .col-full-height {
+    height: 100%;
+    vertical-align: middle;
+  }
+  .row-same-height {
+    display: table;
+    width: 100%;
+    /* fix overflow */
+    table-layout: fixed;
+  }
+  .col-xs-height {
+    display: table-cell;
+    float: none !important;
+  }
+  
+  @media (min-width: 768px) {
+    .col-sm-height {
+      display: table-cell;
+      float: none !important;
+    }
+  
+    .col-sm-full-height {
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  @media (min-width: 992px) {
+    .col-md-height {
+      display: table-cell;
+      float: none !important;
+    }
+  
+    .col-md-full-height {
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  @media (min-width: 1200px) {
+    .col-lg-height {
+      display: table-cell;
+      float: none !important;
+    }
+  
+    .col-lg-full-height {
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  
+  /* vertical alignment styles */
+  
+  .col-top {
+    vertical-align: top;
+  }
+  .col-middle {
+    vertical-align: middle;
+  }
+  .col-bottom {
+    vertical-align: bottom;
+  }
